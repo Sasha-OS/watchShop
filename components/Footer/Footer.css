@@ -1,0 +1,13 @@
+
+  .footer__row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .footer__text {
+    color: #445162;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+  }
