@@ -31,6 +31,8 @@ window.onload = function() {
 		},
 	])
 	var currentPath = window.location.pathname;
+	alert(currentPath);
+	alert('CurrentPath')
 	if(currentPath === '/') {
 		console.log('You are on the Main page')
 	} else {
