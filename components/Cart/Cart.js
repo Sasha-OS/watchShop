@@ -31,7 +31,7 @@ class Cart {
                     ${htmlCatalog}
 					<div class="shopping-element__name">💥 Сума всіх товарів:</div>
                     <div class="shopping-element__price">${sumCatalog.toLocaleString()} USD</div>
-                    <button class="description-element__btn" onclick='location.href="https://sasha-os.github.io/watchShop/order"' > Перейти до формування замовлення </button>
+                    <button class="description-element__btn" onclick='window.location.path="/watchShop/order"' > Перейти до формування замовлення </button>
                    
                     
                
