@@ -33,12 +33,12 @@ window.onload = function() {
 	var currentPath = window.location.pathname;
 	console.log(currentPath);
 	console.log('CurrentPath');
-	if(currentPath === '/') {
+	/*if(currentPath === '/') {
 		console.log('You are on the Main page')
 	} else {
 		var route = myFirstRouter.routes.filter(function(r) {
 			return r.path === currentPath
 		})[0];
 		console.log('You are on the ' + route.name + ' path');
-	}
+	}*/
 }
