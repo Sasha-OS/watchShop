@@ -14,31 +14,31 @@ window.onload = function() {
 
 	var myFirstRouter = new Router('myFirstRouter', [
 		{
-			path: '/',
+			path: '/watchShop/index',
 			name: 'Main'
 		},
 		{
-			path: '/cart',
+			path: '/watchShop/cart',
 			name: 'CART'
 		},
 		{
-			path: '/share',
+			path: '/watchShop/share',
 			name: 'SHARE'
 		},
 		{
-			path: '/order',
+			path: '/watchShop/order',
 			name: 'ORDER'
 		},
 	])
 	var currentPath = window.location.pathname;
 	console.log(currentPath);
 	console.log('CurrentPath');
-	/*if(currentPath === '/') {
+	if(currentPath === '/watchShop/index') {
 		console.log('You are on the Main page')
 	} else {
 		var route = myFirstRouter.routes.filter(function(r) {
 			return r.path === currentPath
 		})[0];
 		console.log('You are on the ' + route.name + ' path');
-	}*/
+	}
 }
