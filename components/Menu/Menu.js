@@ -4,10 +4,10 @@ class Menu {
         const html = `
         <div class="dws-menu">
          <ul>
-           <li route="/"><a href="index"><i></i>Головна</a></li>
-           <li route="/share"><a href="share"><i></i>Акції</a></li>
-           <li route="/cart"><a href="cart"><i></i>Корзина</a></li>
-           <li route="/order"><a href="order"><i></i>Зробити замовлення</a></li>
+           <li route="/watchShop/index"><a href="index"><i></i>Головна</a></li>
+           <li route="/watchShop/share"><a href="share"><i></i>Акції</a></li>
+           <li route="/watchShop/cart"><a href="cart"><i></i>Корзина</a></li>
+           <li route="/watchShop/order"><a href="order"><i></i>Зробити замовлення</a></li>
          </ul> 
       </div>
         `;
