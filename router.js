@@ -31,8 +31,6 @@ window.onload = function() {
 		},
 	])
 	var currentPath = window.location.pathname;
-	console.log(currentPath);
-	console.log('CurrentPath');
 	if(currentPath === '/watchShop/index') {
 		console.log('You are on the Main page')
 	} else {
