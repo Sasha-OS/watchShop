@@ -11,7 +11,7 @@ spinnerPage.render();
 
 let CATALOG = [];
 
-fetch('server/catalog.json')
+fetch('server/db.json')
     .then(res => res.json())
     .then(body => {
 		CATALOG = body;
