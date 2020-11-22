@@ -73,6 +73,7 @@ function render() {
 					address: document.getElementById('exampleinputAddress1').value,
 					phone: document.getElementById('phone').value,
 					email: document.getElementById('email').value,
+					date: new Date(),
 					values: values
 				}
 			
