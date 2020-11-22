@@ -10,3 +10,4 @@ const ROOT_DESCRIPTION = document.getElementById('description');
 const ROOT_SHARE = document.getElementById('share');
 const ROOT_CART = document.getElementById('cart');
 const ROOT_ORDER = document.getElementById('order');
+const ROOT_ORDERINFO = document.getElementById('orderinfo');

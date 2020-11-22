@@ -26,8 +26,9 @@ class Order {
           <input  name="email" type="email" class="form-control" id="email" placeholder="example@gmail.com">
          </div>
 
+         <label for="addinfo">Додаткова інформація</label>
+        <input  name="addinfo" type="text" id="addinfo"  placeholder="Введіть додаткові побажання">
 
-        <input id="additioal_info" type="text" placeholder="Введіть додаткові побажання">
         <button type="submit" value="push" id="send-form" class="btn-primary">Підтвердити</button>
       </form>
         `;

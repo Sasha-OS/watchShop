@@ -12,14 +12,15 @@ class Slider {
 			<img src="img/3.jpg" alt ="">
 			<img src="img/4.jpg" alt ="">
 			<img src="img/5.jpg" alt ="">
-			<img src="img/6.jpg" alt ="">
-		  </div>
+      <img src="img/6.jpg" alt ="">
+      </div>
+
       `;
-      autoSlider();
+    autoSlider();
     var left = 0;
     var timer;
-    
-    
+
+ 
     function autoSlider () {
       timer = setTimeout(function () {
         var row = document.getElementById('row');
