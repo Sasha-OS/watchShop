@@ -28,6 +28,57 @@ function render() {
 			document.getElementById('phone').style.color = "black";
 			console.log("Кінець валідації")
 			console.log(serialize(form));
+			let data = '';
+			const requestUrl = 'https://jsonplaceholder.typicode.com/users';
+			function sendRequest(method, url, body = null) {
+				return new Promise((resolve, reject) => {
+					
+				const xhr = new XMLHttpRequest()
+			
+				xhr.open(method, url)
+			
+				xhr.responseType = 'json'
+				xhr.setRequestHeader('Content-type', 'application/json')
+			
+				xhr.onload = () => {
+					if (xhr.status >=400) {
+						reject(xhr.response)
+					} else {
+						resolve(xhr.response)
+					}
+				}
+			
+				xhr.onerror = () => {
+					reject(xhr.response)
+				}
+			
+				xhr.send(JSON.stringify(body))
+					}) 	
+				
+				
+				}
+			
+				const productsStore = localStorageUtil.getProducts();
+				let values = new Array();
+				let personalId = Date.now();
+				CATALOG.forEach(({ id, name, price }) => {
+					if (productsStore.indexOf(id) !== -1) {
+						 values += JSON.stringify({id, name, price})
+					}
+					return values
+				});
+			
+				const body = {
+					name: document.getElementById('exampleInputName1').value,
+					address: document.getElementById('exampleinputAddress1').value,
+					phone: document.getElementById('phone').value,
+					email: document.getElementById('email').value,
+					values: values
+				}
+			
+				sendRequest('POST', requestUrl, body )
+				.then( data => console.log(data))
+				.catch( err => console.log(err))
 		}
  
 		
