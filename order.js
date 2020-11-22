@@ -80,6 +80,8 @@ function render() {
 				sendRequest('POST', requestUrl, body )
 				.then( data => console.log(data))
 				.catch( err => console.log(err))
+
+				//console.log(http.get(`${requestUrl}?id`)).toPromise();
 		}
  
 		
