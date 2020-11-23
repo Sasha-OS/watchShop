@@ -103,13 +103,16 @@ function render() {
 					sum: sumCatalog,
 					values: values
 				}
-				document.getElementById('send-form').disabled = 'true';
-				document.getElementById('send-form').style.background = 'green';
-				localStorage.clear();
+		
 			
 				sendRequest('POST', requestUrl, body )
-				.then( data => console.log(data))
+				.then( data => {console.log(data)})
 				.catch( err => console.log(err))
+
+				document.getElementById('send-form').disabled = 'true';
+				document.getElementById('send-form').style.background = 'green';
+				document.getElementById('send-form').innerText = "Замовлення сформоване"
+				localStorage.clear();
 
 				ROOT_ORDERINFO.innerHTML = html;
 		}
