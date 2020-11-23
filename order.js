@@ -85,6 +85,13 @@ function render() {
 					`
 					return values
 				});
+				if (sumCatalog == 0) {
+					console.log('Корзина пуста')
+					document.getElementById('send-form').disabled = 'true';
+					document.getElementById('send-form').style.background = 'red';
+					document.getElementById('send-form').innerText= 'Корзина пуста';
+					return
+				}
 			
 				const body = {
 					name: document.getElementById('exampleInputName1').value,
