@@ -1,4 +1,3 @@
-
 function render() {
 	navigationMenu.render();
 	cartPage.render();
