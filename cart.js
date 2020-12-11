@@ -1,3 +1,4 @@
+import {cartPage} from './components/Cart'
 function render() {
 	navigationMenu.render();
 	cartPage.render();

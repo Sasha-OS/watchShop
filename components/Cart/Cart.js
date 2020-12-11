@@ -1,4 +1,4 @@
-class Cart {
+ class Cart {
 
 	
 	render() {
@@ -46,4 +46,4 @@ class Cart {
     
 
 
-const cartPage = new Cart();
+export const cartPage = new Cart();
